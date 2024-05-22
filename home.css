@@ -1,0 +1,96 @@
+body{
+    align-items: center;
+}
+
+#main{
+    width: 338px; 
+    height: 601px;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    margin-bottom: 2em;
+}
+
+.screen {
+    width: 338px;
+    height: 601px;
+    position: absolute;
+    object-fit: cover;
+    z-index: 0;
+}
+
+
+.top-wrapper{
+    background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0));
+    padding-bottom: 20px;
+    z-index: 1;
+
+}
+
+.progress-bar-wapper{
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+.progress-bar{
+    width: 100%;  
+    display: grid;
+    margin-top: 5px;
+    grid-template-columns: repeat(auto-fit, minmax(5px, 1fr));
+    grid-gap: 5px;
+}
+
+.progress{
+    height: 3px;
+    background-color: white;
+    border-radius: 10px;
+}
+.done{
+    background-color: darkgray;
+
+}
+.header{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+}
+
+.logo{
+    margin-left: 10px;
+    margin-top: 5px;
+}
+
+.buttons{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.button{
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.3);
+    color: white;
+    border: none;
+    border-radius: 100%;
+    width: 25px;
+    height: 25px;
+    margin-right: 10px; 
+    margin-top: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.button:hover{
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.icon{
+    color: white;
+    opacity: 100%;
+}
+
+.hidden{
+    display: none;
+}   
